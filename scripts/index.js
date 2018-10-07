@@ -68,8 +68,11 @@ function initMap() {
         const infoWindow = new google.maps.InfoWindow({
           content: props.content
         });
-        marker.addListener("click", function() {
+        marker.addListener("mouseover", function() {
           infoWindow.open(map, marker);
+        });
+        marker.addListener("mouseout", function() {
+          infoWindow.close(map, marker);
         });
       }
     }, 2000);
