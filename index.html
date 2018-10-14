@@ -4,26 +4,88 @@
     <meta charset="utf-8">
     <title>NZ is Fun!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
 
   </head>
   <body>
     <nav>
-        <li>Home</li>
-        <li>Upcoming Events</li>
-        <li>Main Attractions</li>
-        <li>Learn about NZ</li>
-
+      <div class="logo">
+        <p>NZ</p>
+        <p>IS FUN</p>
+      </div>
+      <li class="active">Home</li>
+      <li>
+        <a href="events.html">Upcoming Events</a>
+      </li>
+      <li>Main Attractions</li>
+      <li>Learn about NZ</li>
     </nav>
-    <main>
-      <div id="map"></div>
-    </main>
-
-
+    <div class="heroImg">
+      <img src="img\NZCity.png" alt="">
+      <div>Welcome to NZ!</div>
+    </div>
+    <div class="page-content">
+      <main>
+        <div class="header">
+          <div class="intro">
+            <h2>New Zealand has something for everyone.</h2>
+            <p>Looking for some thrill-seeking action? Looking for a nice dinner and a show?</p>
+            <p>Looking for some of the most beautiful views?</p>
+            <h3>New Zealand has got you covered!</h3>
+          </div>
+          <img src="img\hobbitHome.png" alt="">
+        </div>
+        <div class="links">
+          <h3>Need some suggestions?</h3>
+          <div class="attractions">
+            <div class="attraction-item">
+              <img src="img\zorb.JPG" alt="">
+              <p class="attraction-link">NZ Attractions</p>
+              <p class="location">Location:</p>
+            </div>
+            <div class="attraction-item">
+              <img src="img\winery.jpg" alt="">
+              <p class="attraction-link">Upcoming Events</p>
+              <p class="location">Location:</p>
+            </div>
+            <div class="attraction-item">
+              <img src="img\White-Water-Rafting-New-Zealand.jpg" alt="">
+              <p class="attraction-link">Learn about NZ</p>
+              <p class="location">Location:</p>
+            </div>
+            <div class="attraction-item">
+              <img src="img\Hukafalls-Jet_optimized.jpg" alt="">
+              <p class="location">Location:</p>
+            </div>
+            <div class="attraction-item">
+              <img src="img\best-snowboarding-holidays-in-New-Zealand-with-NZ-Snow-Tours10-680x400.jpg" alt="">
+              <p class="location">Location:</p>
+            </div>
+            <div class="attraction-item">
+              <img src="img\hiking picture.jpg" alt="">
+              <p class="location">Location:</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div id="contact">
+        <p>Need more information? Get in touch with us!</p>
+        <form class="contact-form" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Name">
+          <input type="text" name="" value="" placeholder="Mobile">
+          <input type="text" name="" value="" placeholder="Email">
+          <textarea name="name" rows="8" cols="80" placeholder="Your message here!"></textarea>
+        </form>
+      </div>
+      <div class="mapContainer">
+        <div id="map"></div>
+      </div>
+    </div>
+    <footer>
+      <p>hello</p>
+    </footer>
     <script src="scripts\index.js" charset="utf-8"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNj-wiwDIA47bx2riXivE84-bx7poGuUY&callback=initMap"
-    async defer></script>
-
-
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNj-wiwDIA47bx2riXivE84-bx7poGuUY&callback=initMap" async="async" defer="defer"></script> -->
   </body>
 </html>
