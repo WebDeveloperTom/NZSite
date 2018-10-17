@@ -3,32 +3,144 @@
   <head>
     <meta charset="utf-8">
     <title>NZ is Fun!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styling/navbar.css">
+    <link rel="stylesheet" href="styling/eventstyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <p>NZ</p>
-        <p>IS FUN</p>
-      </div>
-      <li>Home</li>
-      <li class="active">Upcoming Events</li>
-      <li>Main Attractions</li>
-      <li>Learn about NZ</li>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="index.html" class="logo">NZ IS FUN</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="events.html" class="nav-links">Upcoming Events</a>
+        </li>
+        <li>
+          <a href="attractions.html" class="nav-links">Main Attractions</a>
+        </li>
+        <li>
+          <a href="learn.html" class="nav-links">
+            NZ History</a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="nav-links">Contact Us</a>
+        </li>
+      </ul>
     </nav>
     <div class="heroImg">
       <img src="img\eventheader.jpg" alt="">
-      <div>What's happening?</div>
+      <div class="box" style="width: 37%;">
+        <div class="welcome">What's happening?</div>
+      </div>
     </div>
     <div class="page-content">
-      <main></main>
+      <main>
+        <div class="header">
+          <div class="intro">
+            <h2>Check out these awesome upcoming events!</h2>
+            <p>Be sure to follow the links for more info.</p>
+          </div>
+          <div class="events-list">
+            <div class="event-item">
+              <img src="img\event-assests\quizzical-mr-jeff.jpg" alt="">
+              <div class="event-description">
+                <p class="event-title">The Quizzical Mr Jeff</p>
+                <p class="event-date">When: Sunday 14 October 2018 8:00pm – 8:50pm
+                </p>
+                <p class="event-place">Where: The Scruffy Bunny Improv Theatre, 100 Courtenay Pl, Te Aro, Wellington
+                </p>
+                <p class="event-description">Unleash your imagination with The Quizzical Mr Jeff, an entrancing solo show by one of New Zealand most talented new cirque creators.
+                </p>
+                <p class="event-link">More Info can be found
+                  <a href="https://www.eventfinda.co.nz/2018/the-quizzical-mr-jeff-wellington/wellington">here</a>.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <img src="img\event-assests\dimmu-borgia.jpg" alt="">
+              <div class="event-description">
+                <p class="event-title">Dimmu Borgir - Unveiling Tour</p>
+                <p class="event-date">When:Sunday 14 October 2018 8:00pm</p>
+                <p class="event-place">Where: Studio, 340 Karangahape Rd, Newton, Auckland</p>
+                <p class="event-description">From the dark, frozen corners of Norway, the beast has surfaced. After 25 years, the world’s biggest black metal forge, Dimmu Borgir, surfaces for their first destructive tour of New Zealand.</p>
+                <p class="event-link">More Info can be found
+                  <a href="https://www.eventfinda.co.nz/2018/dimmu-borgir-unveiling-tour/auckland/newton">here</a>.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <img src="img\event-assests\harry-lyon-tour.jpg" alt="">
+              <div class="event-description">
+                <p class="event-title">Harry Lyon - To the Sea Album Tour with Stomping Nick</p>
+                <p class="event-date">When: Sunday 14 October 2018 6:30pm – 10:30pm</p>
+                <p class="event-place">Where: Blue Smoke, 3 Garlands Road, Woolston, Christchurch</p>
+                <p class="event-description">To the Sea is the first solo album for Harry Lyon. Produced by Lyttelton’s music auteur Delaney Davidson the album showcases Harry’s array of styles and influences with classic Kiwi rock, New Orleans vaudeville, Latin,
+                  Pasifika, country and a Christmas ballad for good measure.</p>
+                <p class="event-link">More Info can be found
+                  <a href="https://www.eventfinda.co.nz/2018/harry-lyon-to-the-sea-album-tour/christchurch">here</a>.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <img src="img\event-assests\meditation.jpg" alt="">
+              <div class="event-description">
+                <p class="event-title">Pure Meditation</p>
+                <p class="event-date">When: Sunday 11 November 2018 7:45pm – 9:15pm</p>
+                <p class="event-place">Where: Balanced Living Centre, 81a Pleasant Road, Titirangi, Auckland</p>
+                <p class="event-description">This Pure Meditation evening is an open invitation to everyone interested in practising meditation with others - to relax, find stillness and develop inner Peace and higher Spiritual awareness.</p>
+                <p class="event-link">More Info can be found
+                  <a href="https://www.eventfinda.co.nz/2018/pure-meditation/auckland/titirangi">here</a>.</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <img src="img\event-assests\farmers-market.jpg" alt="">
+              <div class="event-description">
+                <p class="event-title">Farmers Market Taranaki</p>
+                <p class="event-date">When: Sunday 14 October 2018 9:00am – 12:00pm</p>
+                <p class="event-place">Where: Huatoki Plaza, James Lane, New Plymouth, Taranaki</p>
+                <p class="event-description">A weekly market where local growers & producers gather to sell directly to you in a fun vibrant environment.</p>
+                <p class="event-link">More Info can be found
+                  <a href="https://www.eventfinda.co.nz/2018/farmers-market-taranaki/new-plymouth">here</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
+    <!-- footer -->
     <footer>
-      <p>hello</p>
+      <div class="footer-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="events.html">Upcoming Events</a>
+        </li>
+        <li>
+          <a href="attractions.html">Main Attractions</a>
+        </li>
+        <li>
+          <a href="learn.html">Learn About NZ</a>
+        </li>
+      </div>
+      <div class="socials">
+        <p>Check us out on social media!</p>
+        <div class="social-icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <p>NZ</p>
+        <p>IS FUN</p>
+      </div>
     </footer>
-    <script src="scripts\index.js" charset="utf-8"></script>
+    <!-- footer end -->
+    <script src="scripts\navbar.js" charset="utf-8"></script>
   </body>
 </html>
