@@ -3,28 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>NZ is Fun!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styling/navbar.css">
+    <link rel="stylesheet" href="styling/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
-
+    <script src="scripts\form.js" charset="utf-8"></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <p>NZ</p>
-        <p>IS FUN</p>
-      </div>
-      <li class="active">Home</li>
-      <li>
-        <a href="events.html">Upcoming Events</a>
-      </li>
-      <li>Main Attractions</li>
-      <li>Learn about NZ</li>
+    <!-- navbar -->
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="index.html" class="logo">NZ IS FUN</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="events.html" class="nav-links">Upcoming Events</a>
+        </li>
+        <li>
+          <a href="attractions.html" class="nav-links">Main Attractions</a>
+        </li>
+        <li>
+          <a href="learn.html" class="nav-links">
+            NZ History</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-links">Contact Us</a>
+        </li>
+      </ul>
     </nav>
+    <!-- end navbar -->
+
+    <!-- hero image -->
     <div class="heroImg">
       <img src="img\NZCity.png" alt="">
-      <div>Welcome to NZ!</div>
+      <div class="box" style="width: 37%;">
+        <div class="welcome">Welcome to NZ!</div>
+      </div>
     </div>
+    <!-- end hero image -->
+
     <div class="page-content">
       <main>
         <div class="header">
@@ -38,20 +59,33 @@
         </div>
         <div class="links">
           <h3>Need some suggestions?</h3>
+          <!-- attraction grid -->
           <div class="attractions">
-            <div class="attraction-item">
+            <div class="attraction-item first">
               <img src="img\zorb.JPG" alt="">
-              <p class="attraction-link">NZ Attractions</p>
+              <a href="attractions.html">
+                <div class="box" style="width: 50%;">
+                  <p class="attraction-link">NZ Attractions</p>
+                </div>
+              </a>
               <p class="location">Location:</p>
             </div>
             <div class="attraction-item">
               <img src="img\winery.jpg" alt="">
-              <p class="attraction-link">Upcoming Events</p>
+              <a href="events.html">
+                <div class="box" style="width: 50%;">
+                  <p class="attraction-link">Upcoming Events</p>
+                </div>
+              </a>
               <p class="location">Location:</p>
             </div>
             <div class="attraction-item">
               <img src="img\White-Water-Rafting-New-Zealand.jpg" alt="">
-              <p class="attraction-link">Learn about NZ</p>
+              <a href="learn.html">
+                <div class="box" style="width: 50%;">
+                  <p class="attraction-link">Learn about NZ</p>
+                </div>
+              </a>
               <p class="location">Location:</p>
             </div>
             <div class="attraction-item">
@@ -62,30 +96,66 @@
               <img src="img\best-snowboarding-holidays-in-New-Zealand-with-NZ-Snow-Tours10-680x400.jpg" alt="">
               <p class="location">Location:</p>
             </div>
-            <div class="attraction-item">
+            <div class="attraction-item last">
               <img src="img\hiking picture.jpg" alt="">
               <p class="location">Location:</p>
             </div>
           </div>
+          <!-- attraction grid end -->
         </div>
       </main>
+
+      <!-- contact form -->
       <div id="contact">
         <p>Need more information? Get in touch with us!</p>
         <form class="contact-form" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Name">
-          <input type="text" name="" value="" placeholder="Mobile">
-          <input type="text" name="" value="" placeholder="Email">
-          <textarea name="name" rows="8" cols="80" placeholder="Your message here!"></textarea>
+          <input class="form-name" type="text" name="name" value="" placeholder="Name" required="required">
+          <input class="form-mobile" type="text" name="mobile" value="" placeholder="Mobile" required="required">
+          <input class="form-email" type="email" name="email" value="" placeholder="Email" required="required">
+          <textarea class="form-message" name="message" rows="8" cols="80" placeholder="Your message here!" required="required"></textarea>
+          <button type="button" name="button" onclick="sendMessage()">Send!</button>
         </form>
+        <div class="response"></div>
       </div>
+      <!-- end contact form -->
+      <!-- map container -->
       <div class="mapContainer">
         <div id="map"></div>
       </div>
+      <!-- end map container -->
     </div>
+    <!-- footer -->
     <footer>
-      <p>hello</p>
+      <div class="footer-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="events.html">Upcoming Events</a>
+        </li>
+        <li>
+          <a href="attractions.html">Main Attractions</a>
+        </li>
+        <li>
+          <a href="learn.html">Learn About NZ</a>
+        </li>
+      </div>
+      <div class="socials">
+        <p>Check us out on social media!</p>
+        <div class="social-icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <p>NZ</p>
+        <p>IS FUN</p>
+      </div>
     </footer>
-    <script src="scripts\index.js" charset="utf-8"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNj-wiwDIA47bx2riXivE84-bx7poGuUY&callback=initMap" async="async" defer="defer"></script> -->
+    <!-- footer end -->
+    <script src="scripts\map.js" charset="utf-8"></script>
+    <script src="scripts\navbar.js" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNj-wiwDIA47bx2riXivE84-bx7poGuUY&callback=initMap" async="async" defer="defer"></script>
   </body>
 </html>
