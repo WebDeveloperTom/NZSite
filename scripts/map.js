@@ -73,9 +73,9 @@ function initMap() {
         });
 
         marker.addListener("mouseout", function() {
-          setTimeout(function() {
-            infoWindow.close(map, marker);
-          }, 2000);
+          // setTimeout(function() {
+          infoWindow.close(map, marker);
+          // }, 2000);
         });
       }
     }, 2000);
