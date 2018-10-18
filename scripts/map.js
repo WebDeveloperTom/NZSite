@@ -72,6 +72,7 @@ function initMap() {
           infoWindow.open(map, marker);
         });
 
+        //removed hover effect, not sure if I like it or not.
         marker.addListener("mouseout", function() {
           // setTimeout(function() {
           infoWindow.close(map, marker);
