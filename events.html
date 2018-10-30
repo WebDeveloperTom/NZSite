@@ -5,10 +5,12 @@
     <title>NZ is Fun!</title>
     <link rel="stylesheet" href="styling/navbar.css">
     <link rel="stylesheet" href="styling/eventstyle.css">
+    <link rel="stylesheet" href="styling/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
   </head>
   <body>
+    <!-- navbar start -->
     <nav class="navbar">
       <span class="navbar-toggle" id="js-navbar-toggle">
         <i class="fas fa-bars"></i>
@@ -40,17 +42,21 @@
       </div>
     </div>
     <div class="page-content">
+      <!-- main content -->
       <main>
         <div class="header">
           <div class="intro">
             <h2>Check out these awesome upcoming events!</h2>
             <p>Be sure to follow the links for more info.</p>
           </div>
+          <!-- event list -->
           <div class="events-list">
             <div class="event-item">
-              <img src="img\event-assests\quizzical-mr-jeff.jpg" alt="">
+              <a href="https://www.eventfinda.co.nz/2018/the-quizzical-mr-jeff-wellington/wellington">
+                <img src="img\event-assests\quizzical-mr-jeff.jpg" alt="">
+              </a>
               <div class="event-description">
-                <p class="event-title">The Quizzical Mr Jeff</p>
+                <h3 class="event-title">The Quizzical Mr Jeff</h3>
                 <p class="event-date">When: Sunday 14 October 2018 8:00pm – 8:50pm
                 </p>
                 <p class="event-place">Where: The Scruffy Bunny Improv Theatre, 100 Courtenay Pl, Te Aro, Wellington
@@ -62,10 +68,12 @@
               </div>
             </div>
             <div class="event-item">
-              <img src="img\event-assests\dimmu-borgia.jpg" alt="">
+              <a href="https://www.eventfinda.co.nz/2018/dimmu-borgir-unveiling-tour/auckland/newton">
+                <img src="img\event-assests\dimmu-borgia.jpg" alt="">
+              </a>
               <div class="event-description">
-                <p class="event-title">Dimmu Borgir - Unveiling Tour</p>
-                <p class="event-date">When:Sunday 14 October 2018 8:00pm</p>
+                <h3 class="event-title">Dimmu Borgir - Unveiling Tour</h3>
+                <p class="event-date">When: Sunday 14 October 2018 8:00pm</p>
                 <p class="event-place">Where: Studio, 340 Karangahape Rd, Newton, Auckland</p>
                 <p class="event-description">From the dark, frozen corners of Norway, the beast has surfaced. After 25 years, the world’s biggest black metal forge, Dimmu Borgir, surfaces for their first destructive tour of New Zealand.</p>
                 <p class="event-link">More Info can be found
@@ -73,9 +81,11 @@
               </div>
             </div>
             <div class="event-item">
-              <img src="img\event-assests\harry-lyon-tour.jpg" alt="">
+              <a href="https://www.eventfinda.co.nz/2018/harry-lyon-to-the-sea-album-tour/christchurch">
+                <img src="img\event-assests\harry-lyon-tour.jpg" alt="">
+              </a>
               <div class="event-description">
-                <p class="event-title">Harry Lyon - To the Sea Album Tour with Stomping Nick</p>
+                <h3 class="event-title">Harry Lyon - To the Sea Album Tour with Stomping Nick</h3>
                 <p class="event-date">When: Sunday 14 October 2018 6:30pm – 10:30pm</p>
                 <p class="event-place">Where: Blue Smoke, 3 Garlands Road, Woolston, Christchurch</p>
                 <p class="event-description">To the Sea is the first solo album for Harry Lyon. Produced by Lyttelton’s music auteur Delaney Davidson the album showcases Harry’s array of styles and influences with classic Kiwi rock, New Orleans vaudeville, Latin,
@@ -85,9 +95,11 @@
               </div>
             </div>
             <div class="event-item">
-              <img src="img\event-assests\meditation.jpg" alt="">
+              <a href="https://www.eventfinda.co.nz/2018/pure-meditation/auckland/titirangi">
+                <img src="img\event-assests\meditation.jpg" alt="">
+              </a>
               <div class="event-description">
-                <p class="event-title">Pure Meditation</p>
+                <h3 class="event-title">Pure Meditation</h3>
                 <p class="event-date">When: Sunday 11 November 2018 7:45pm – 9:15pm</p>
                 <p class="event-place">Where: Balanced Living Centre, 81a Pleasant Road, Titirangi, Auckland</p>
                 <p class="event-description">This Pure Meditation evening is an open invitation to everyone interested in practising meditation with others - to relax, find stillness and develop inner Peace and higher Spiritual awareness.</p>
@@ -96,9 +108,11 @@
               </div>
             </div>
             <div class="event-item">
-              <img src="img\event-assests\farmers-market.jpg" alt="">
+              <a href="https://www.eventfinda.co.nz/2018/farmers-market-taranaki/new-plymouth">
+                <img src="img\event-assests\farmers-market.jpg" alt="">
+              </a>
               <div class="event-description">
-                <p class="event-title">Farmers Market Taranaki</p>
+                <h3 class="event-title">Farmers Market Taranaki</h3>
                 <p class="event-date">When: Sunday 14 October 2018 9:00am – 12:00pm</p>
                 <p class="event-place">Where: Huatoki Plaza, James Lane, New Plymouth, Taranaki</p>
                 <p class="event-description">A weekly market where local growers & producers gather to sell directly to you in a fun vibrant environment.</p>
@@ -107,8 +121,10 @@
               </div>
             </div>
           </div>
+          <!-- event list end -->
         </div>
       </main>
+      <!-- main content end -->
     </div>
 
     <!-- footer -->
@@ -130,9 +146,24 @@
       <div class="socials">
         <p>Check us out on social media!</p>
         <div class="social-icons">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
+          <div class="social-facebook">
+            <a href="https://www.facebook.com/TravelTodayNZ/" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <p>Facebook</p>
+          </div>
+          <div class="social-instagram">
+            <a href="https://www.instagram.com/travelnewzealand" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <p>Instagram</p>
+          </div>
+          <div class="social-twitter">
+            <a href="https://twitter.com/newzealand" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <p>Twitter</p>
+          </div>
         </div>
       </div>
       <div class="footer-logo">

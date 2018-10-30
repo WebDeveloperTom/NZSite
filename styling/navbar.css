@@ -1,3 +1,4 @@
+/* small screen navbar created first */
 .navbar {
   background-color: #171717;
   font-family: "Merriweather", serif;
@@ -10,6 +11,7 @@
   display: none;
 }
 
+/* for mobile responsive menu */
 .active {
   display: block;
 }
@@ -37,10 +39,12 @@
   top: 10px;
   right: 20px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
+  opacity: 0.8;
   font-size: 24px;
 }
 
+/* media query to turn burger menu into full navbar when the screen is bigger than a tablet */
 @media screen and (min-width: 868px) {
   .navbar {
     display: flex;
@@ -74,6 +78,7 @@
   }
 
   .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
+    color: white;
+    opacity: 1;
   }
 }

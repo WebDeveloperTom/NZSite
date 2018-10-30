@@ -4,6 +4,7 @@ font-family: 'Merriweather', serif;
 Body font
 font-family: 'Montserrat', sans-serif;
 */
+/* inital styling */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ body {
   color: inherit;
 }
 
+/* Hero Image */
 .heroImg {
   max-height: 500px;
   position: relative;
@@ -42,21 +44,7 @@ body {
   max-height: 500px;
 }
 
-.page-content {
-  min-height: 100%;
-  margin-bottom: -150px;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 150px;
-}
-
+/* main content grid */
 main {
   display: grid;
   grid-template-columns: 0.4fr 1fr 1fr 0.4fr;
@@ -81,6 +69,7 @@ main {
   font-size: 26px;
 }
 
+/* the CSS for the black box that appears on photos */
 .box {
   text-align: center;
   position: absolute;
@@ -92,6 +81,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
+/* main content text aligned left */
 .history {
   text-align: left;
   margin-bottom: 50px;
@@ -110,59 +100,7 @@ main {
   max-width: 800px;
 }
 
-footer {
-  background-color: #171717;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.footer-links {
-  grid-row: span 3;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-links>li {
-  list-style: none;
-}
-
-.socials {
-  text-align: center;
-  grid-column: 2;
-}
-
-.social-icons {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.social-icons>i {
-  font-size: 35px;
-}
-
-.footer-logo {
-  grid-column: 3;
-  grid-row: 1/3;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-
 /* media quires */
-@media only screen and (min-width: 1541px) {
-
-  .first,
-  .last {
-    grid-column: span 2;
-    max-height: 310px;
-  }
-}
-
 @media only screen and (max-width: 1050px) {
   .box {
     height: 70%;
@@ -180,38 +118,5 @@ footer {
 
   .box {
     height: 65%;
-  }
-
-  .page-content {
-    margin-bottom: -350px;
-  }
-
-  footer,
-  .page-content::after {
-    height: 350px;
-  }
-
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    height: auto;
-  }
-
-  .footer-links {
-    grid-row: 1;
-    grid-column: span 3;
-  }
-
-  .socials {
-    grid-column: span 3;
-    grid-row: 2;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .footer-logo {
-    grid-column: span 3;
-    grid-row: 3;
   }
 }

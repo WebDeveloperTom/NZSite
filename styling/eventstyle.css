@@ -4,6 +4,7 @@ font-family: 'Merriweather', serif;
 Body font
 font-family: 'Montserrat', sans-serif;
 */
+/* inital styling */
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@ body {
   color: inherit;
 }
 
+/* Hero Image section */
 .heroImg {
   max-height: 500px;
   position: relative;
@@ -41,21 +43,7 @@ body {
   max-height: 500px;
 }
 
-.page-content {
-  min-height: 100%;
-  margin-bottom: -150px;
-}
-
-.page-content::after {
-  content: "";
-  display: block;
-}
-
-footer,
-.page-content::after {
-  height: 150px;
-}
-
+/* main content grid */
 main {
   display: grid;
   grid-template-columns: 0.15fr 1fr 1fr 0.15fr;
@@ -91,19 +79,19 @@ main {
   transform: translate(-50%, -50%);
 }
 
+/* event list grid */
 .event-item {
   display: grid;
   grid-template-columns: minmax(150px, 2fr) 3fr;
   min-height: 200px;
   margin-bottom: 75px;
   border: solid #333 2px;
+  font-size: 1.1em;
 }
 
-.event-item>img {
+.event-item>a>img {
   max-width: 100%;
   height: 100%;
-  /* min-width: 200px;
-  min-height: 200px; */
 }
 
 .event-description {
@@ -113,50 +101,17 @@ main {
   justify-content: space-around;
 }
 
-footer {
-  background-color: #171717;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+.event-link>a {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
-.footer-links {
-  grid-row: span 3;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
+.event-link>a:hover {
+  color: red;
 }
 
-.footer-links>li {
-  list-style: none;
-}
-
-.socials {
-  text-align: center;
-  grid-column: 2;
-}
-
-.social-icons {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.social-icons>i {
-  font-size: 35px;
-}
-
-.footer-logo {
-  grid-column: 3;
-  grid-row: 1/3;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-
-@media only screen and (max-width: 700px) {
+/* media quieres */
+@media only screen and (max-width: 900px) {
   .event-item {
     grid-template-columns: 1fr;
     height: 100%;
@@ -175,38 +130,5 @@ footer {
 
   .intro>* {
     font-size: 18px;
-  }
-
-  .page-content {
-    margin-bottom: -350px;
-  }
-
-  footer,
-  .page-content::after {
-    height: 350px;
-  }
-
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    height: auto;
-  }
-
-  .footer-links {
-    grid-row: 1;
-    grid-column: span 3;
-  }
-
-  .socials {
-    grid-column: span 3;
-    grid-row: 2;
-    justify-content: center;
-    align-self: center;
-  }
-
-  .footer-logo {
-    grid-column: span 3;
-    grid-row: 3;
   }
 }
