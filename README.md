@@ -1,10 +1,12 @@
 # NZSite Assignment
 
-Task
+Task:
+
 **You must create an attractive informative website
 about New Zealand. The website must include the
 following information:**
 
+```
 -New Zealand’s history and treaty of Waitangi
 
 -Main attractions of New Zealand
@@ -12,6 +14,7 @@ following information:**
 -New Zealand interactive map
 
 -Up-coming events for NZ
+```
 
 You will need to research these topics in order to gain
 the required information. Your content must be
@@ -22,6 +25,7 @@ understand manner.
 
 Your website must include the following:
 
+```
 -Clear and quality information in the areas listed
 above
 
@@ -51,3 +55,4 @@ and class
 
 -The JavaScript code should be well planned and
 demonstrate how you solved a software problem
+```
